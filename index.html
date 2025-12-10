@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio d'Aminata_Constance - Architecte d'Intelligences : Jeu Vidéo, Immersion & Agents Autonomes">
+    <title>Aminata Sane | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Glassmorphism -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">Aminata_Constance</div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Accueil</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Hero -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Architecte d'<span class="gradient-text">Intelligences</span> : Jeu Vidéo, Immersion & Agents Autonomes
+                </h1>
+                <p class="hero-subtitle">
+                    Actuellement en formation Jeu Vidéo et Systèmes Immersifs, je me spécialise dans la création d'Agents IA.
+                    <br><br>
+                    Je mets l'IA au service d'une double expertise : concevoir aussi bien des logiciels fonctionnels que des jeux vidéo créatifs. Quel que soit le projet, je garde un objectif d'assistance : bâtir des intelligences capables d'automatiser vos tâches et de simplifier votre quotidien.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn-primary">Découvrir mes projets</a>
+                    <a href="#contact" class="btn-secondary">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-wrapper">
+                    <div class="glow-effect"></div>
+                    <img src="MonPortefolio/images/Profile Picture.png" alt="Aminata Sane" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets (Bento Grid) -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projets <span class="gradient-text">Sélectionnés</span></h2>
+            <p class="section-subtitle">Une sélection de mes réalisations les plus récentes</p>
+            
+            <div class="bento-grid">
+                <!-- Carte Projet 1 - Grande -->
+                <article class="project-card large">
+                    <div class="card-media">
+                        <img src="MonPortefolio/images/overlook_hotel img.png" alt="Overlook Hotel" class="card-image">
+                        <video class="card-video" loop muted playsinline>
+                            <source src="MonPortefolio/images/demo_overlook_hotel.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Overlook Hotel VR</h3>
+                        <p class="card-description">
+                            Expérience immersive en réalité virtuelle inspirée du film "The Shining". 
+                            Navigation 3D avec Three.js et interactions complexes.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">Three.js</span>
+                            <span class="tag">WebXR</span>
+                            <span class="tag">GLSL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Carte Projet 2 -->
+                <article class="project-card">
+                    <div class="card-media">
+                        <img src="MonPortefolio/images/page1 Portfolio Presentation.gif" alt="Portfolio" class="card-image">
+                        <video class="card-video" loop muted playsinline>
+                            <source src="MonPortefolio/images/Ami.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Portfolio Interactif</h3>
+                        <p class="card-description">
+                            Site personnel avec animations fluides et design moderne. 
+                            Optimisé pour les performances et l'accessibilité.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Carte Projet 3 -->
+                <article class="project-card">
+                    <div class="card-media">
+                        <img src="MonPortefolio/images/Ami.gif" alt="Projet Animation" class="card-image">
+                        <video class="card-video" loop muted playsinline>
+                            <source src="MonPortefolio/images/Ami.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Anime2VR Platform</h3>
+                        <p class="card-description">
+                            Plateforme de streaming VR pour contenus animés. 
+                            Interface utilisateur intuitive et expérience immersive.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">WebGL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Carte Projet 4 - Moyenne -->
+                <article class="project-card medium">
+                    <div class="card-media">
+                        <img src="MonPortefolio/images/geordanna-cordero-5NE6mX0WVfQ-unsplash.jpg" alt="Projet E-commerce" class="card-image">
+                        <video class="card-video" loop muted playsinline>
+                            <source src="MonPortefolio/images/Ami.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Dashboard Analytics</h3>
+                        <p class="card-description">
+                            Interface de visualisation de données en temps réel avec graphiques interactifs.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="contact-title">Prête à collaborer sur votre <span class="gradient-text">prochain projet</span></h2>
+                <p class="contact-subtitle">
+                    Vous avez une idée, un projet ou simplement envie d'échanger ? 
+                    N'hésitez pas à me contacter.
+                </p>
+                <a href="mailto:aminata.sane@example.com" class="btn-glow">Me Contacter</a>
+                <div class="contact-links">
+                    <a href="https://github.com/aminata-sane" target="_blank" class="social-link">GitHub</a>
+                    <a href="https://linkedin.com/in/aminata-sane" target="_blank" class="social-link">LinkedIn</a>
+                    <a href="https://twitter.com/aminata-sane" target="_blank" class="social-link">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2025 Aminata Sane. Conçu avec ❤️ et beaucoup de ☕</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
