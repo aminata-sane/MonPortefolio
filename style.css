@@ -516,60 +516,125 @@ body {
    =========================== */
 .tools {
     padding: var(--spacing-xl) 0;
-    background: var(--color-bg);
+    background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.tools::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(102, 126, 234, 0.08) 0%, transparent 70%);
+    pointer-events: none;
 }
 
 .tools-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: var(--spacing-md);
     margin-top: var(--spacing-lg);
+    position: relative;
+    z-index: 1;
 }
 
 .tool-category {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid var(--color-border);
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: var(--radius-lg);
-    padding: var(--spacing-md);
+    padding: calc(var(--spacing-md) * 1.5);
     transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.tool-category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--transition-base);
+}
+
+.tool-category:hover::before {
+    transform: scaleX(1);
 }
 
 .tool-category:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(102, 126, 234, 0.3);
-    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(102, 126, 234, 0.4);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.15);
 }
 
 .category-title {
     font-size: var(--font-size-xl);
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: var(--spacing-md);
-    color: var(--color-text);
+    background: linear-gradient(135deg, var(--color-text) 0%, rgba(102, 126, 234, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .tools-list {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--spacing-sm);
+    gap: 0.75rem;
 }
 
 .tool-badge {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: rgba(102, 126, 234, 0.1);
-    border: 1px solid rgba(102, 126, 234, 0.2);
+    display: inline-flex;
+    align-items: center;
+    padding: 0.625rem 1.25rem;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%);
+    border: 1px solid rgba(102, 126, 234, 0.25);
     border-radius: var(--radius-full);
     color: var(--color-text);
     font-size: 0.875rem;
-    font-weight: 500;
-    transition: all var(--transition-fast);
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    transition: all var(--transition-base);
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+}
+
+.tool-badge::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-primary);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+}
+
+.tool-badge span {
+    position: relative;
+    z-index: 1;
 }
 
 .tool-badge:hover {
-    background: var(--gradient-primary);
     border-color: transparent;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.tool-badge:hover::before {
+    opacity: 1;
 }
 
 /* ===========================
