@@ -3,16 +3,15 @@
   # Salut, je suis Aminata ! 👋
 
   ## 🧠 Architecte d'Intelligences : Jeu Vidéo, Immersion & Agents Autonomes
-
-  <p align="center">
-    <a href="https://www.linkedin.com/in/ton-profil/">
-      <img src="https://img.shields.io/badge/LinkedIn-Connectons--nous-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
+  
+<p align="center">
+    <a href="https://www.linkedin.com/in/aminata-constance-san%C3%A9-82897a33a/">
+        <img src="https://img.shields.io/badge/LinkedIn-Connectons--nous-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
     </a>
-    <a href="https://ton-portfolio.com">
-      <img src="https://img.shields.io/badge/Portfolio-Voir_mes_projets-ff69b4?style=for-the-badge&logo=framer" alt="Portfolio" />
+    <a href="https://aminata-constance-sane.students-laplateforme.io/">
+        <img src="https://img.shields.io/badge/Portfolio-Voir_mes_projets-ff69b4?style=for-the-badge&logo=framer" alt="Portfolio" />
     </a>
-  </p>
-</div>
+</p>
 
 ---
 
