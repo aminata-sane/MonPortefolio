@@ -23,16 +23,24 @@ projectCards.forEach(card => {
     const video = card.querySelector('.card-video');
     
     if (video) {
-        card.addEventListener('mouseenter', () => {
+        // Si la vidéo a autoplay, elle joue automatiquement
+        if (video.hasAttribute('autoplay')) {
             video.play().catch(err => {
-                console.log('Video autoplay failed:', err);
+                console.log('Autoplay video failed:', err);
             });
-        });
-        
-        card.addEventListener('mouseleave', () => {
-            video.pause();
-            video.currentTime = 0;
-        });
+        } else {
+            // Sinon, comportement hover normal
+            card.addEventListener('mouseenter', () => {
+                video.play().catch(err => {
+                    console.log('Video autoplay failed:', err);
+                });
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                video.pause();
+                video.currentTime = 0;
+            });
+        }
     }
 });
 
