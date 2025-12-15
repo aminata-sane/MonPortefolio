@@ -4,6 +4,8 @@
 
   ## 🧠 Architecte d'Intelligences : Jeu Vidéo, Immersion & Agents Autonomes
   
+  ### 🔧 Test déploiement automatique - 15 décembre 2025
+  
 <p align="center">
     <a href="https://www.linkedin.com/in/aminata-constance-san%C3%A9-82897a33a/">
         <img src="https://img.shields.io/badge/LinkedIn-Connectons--nous-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
