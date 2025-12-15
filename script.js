@@ -17,31 +17,61 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // ===========================
 // VIDEO HOVER EFFECT
 // ===========================
+
+// Fonction pour tester le support de l'autoplay
+function canAutoplay() {
+    return new Promise((resolve) => {
+        const video = document.createElement('video');
+        video.muted = true;
+        video.playsInline = true;
+        video.preload = 'none';
+        
+        video.addEventListener('canplaythrough', () => {
+            const playPromise = video.play();
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
+                    video.pause();
+                    resolve(true);
+                }).catch(() => {
+                    resolve(false);
+                });
+            } else {
+                resolve(false);
+            }
+        });
+        
+        video.addEventListener('error', () => resolve(false));
+        video.src = 'data:video/mp4;base64,AAAAHGZ0eXBtcDQyAAACAGlzb21pc28yYXZjMQAAAAhmcmVlAAAGF21kYXQ=';
+    });
+}
+
 const projectCards = document.querySelectorAll('.project-card');
 
-projectCards.forEach(card => {
-    const video = card.querySelector('.card-video');
-    
-    if (video) {
-        // Si la vidéo a autoplay, elle joue automatiquement
-        if (video.hasAttribute('autoplay')) {
-            video.play().catch(err => {
-                console.log('Autoplay video failed:', err);
-            });
-        } else {
-            // Sinon, comportement hover normal
-            card.addEventListener('mouseenter', () => {
+canAutoplay().then(autoplaySupported => {
+    projectCards.forEach(card => {
+        const video = card.querySelector('.card-video');
+        
+        if (video) {
+            // Si autoplay est supporté ET que la vidéo a l'attribut autoplay
+            if (autoplaySupported && video.hasAttribute('autoplay')) {
                 video.play().catch(err => {
-                    console.log('Video autoplay failed:', err);
+                    console.log('Autoplay video failed:', err);
                 });
-            });
-            
-            card.addEventListener('mouseleave', () => {
-                video.pause();
-                video.currentTime = 0;
-            });
+            } else {
+                // Sinon, comportement hover normal
+                card.addEventListener('mouseenter', () => {
+                    video.play().catch(err => {
+                        console.log('Video autoplay failed:', err);
+                    });
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    video.pause();
+                    video.currentTime = 0;
+                });
+            }
         }
-    }
+    });
 });
 
 // ===========================
