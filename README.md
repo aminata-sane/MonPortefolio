@@ -19,9 +19,11 @@
 
 ### 🚀 À propos de moi
 
-> **Actuellement en formation Jeu Vidéo et Systèmes Immersifs, je me spécialise dans la création d'Agents IA.**
+> **Actuellement en formation Jeu Vidéo et Systèmes Immersifs, je me spécialise dans la conception d'expériences immersive et la coordination de projets numériques(JUNIOR).**
 >
-> Je mets l'IA au service d'une double expertise : concevoir aussi bien des logiciels fonctionnels que des jeux vidéo créatifs. Quel que soit le projet, je garde un objectif d'assistance : bâtir des intelligences capables d'automatiser vos tâches et de simplifier votre quotidien.
+> Entre création narrative et structure technique, je traduis des concepts artistiques complexes en parcours utilisateurs interactifs.
+>
+> Spécialisée en ingénierie UX et storytelling, je prends en charge la rédaction des dossiers de production, l'animation sur After Effects et l'articulation des pipelines temps réel (IA, TouchDesigner, SMODE). Mon objectif : coordonner les talents pour donner vie à des installations immersives marquantes.
 
 ---
 
