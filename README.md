@@ -2,7 +2,7 @@
 
   # Salut, je suis Aminata ! 👋
 
-  ## 🧠 Architecte d'Intelligences : Jeu Vidéo, Immersion & Agents Autonomes
+  ## 🧠 CONCEPTRiCE D'EXPÉRIENCES IMMERSIVES & COORDINATION DE PROJETS NUMÉRIQUES (JUNIOR)                                
   
   ### 🔧 Test déploiement automatique - 15 décembre 2025
   
@@ -38,24 +38,32 @@ J'aime explorer la convergence entre le code créatif et l'intelligence artifici
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white)
 
 #### 🎮 Jeu Vidéo & Immersion
+C'est ici qu'il faut insérer la création de contenu et les technologies scénographiques temps réel. C'est ce qui prouve ta valeur dans le milieu de l'immersif.
 ![Unity](https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
 ![Unreal Engine](https://img.shields.io/badge/Unreal_Engine-313131?style=for-the-badge&logo=unrealengine&logoColor=white)
 ![VR/AR](https://img.shields.io/badge/XR_Development-000000?style=for-the-badge&logo=oculus&logoColor=white)
+![After Effects](https://img.shields.io/badge/Adobe_After_Effects-9999FF?style=for-the-badge&logo=adobeaftereffects&logoColor=white)
+![TouchDesigner](https://img.shields.io/badge/TouchDesigner-000000?style=for-the-badge&logo=derivative&logoColor=white)
+![SMODE](https://img.shields.io/badge/SMODE_Studio-1E1E24?style=for-the-badge&logo=stage&logoColor=3498db)
 
 #### 💻 Développement Logiciel & Outils
+Pour une coordinatrice de projet numérique, la maîtrise des outils d'organisation est aussi importante que les langages de code. Montre que tu sais piloter une équipe.
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+![Trello](https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)
+![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white)
 
 ---
 
 ### 🔭 Sur quoi je travaille actuellement ?
 
 - 🎓 Je perfectionne mes compétences en **Systèmes Immersifs** et **Game Design**.
+- 🎭 Je co-conçois YMIR, une fable antique immersive et interactive en temps réel (Pipeline IA, TouchDesigner et SMODE).
+- 🎞️ Je réalise des animations et du motion design sur After Effects pour donner vie à des installations narratives.
 - 🤖 Je développe un **Agent IA** capable de simplifier le quotidien.
-- 🕹️ J'explore comment intégrer des LLMs (Large Language Models) dans des environnements Unity.
-
+- 🕹️ J'explore comment intégrer des LLMs (Large Language Models) dans des environnements interactifs.
 ---
 
 ### 📈 Mes stats GitHub

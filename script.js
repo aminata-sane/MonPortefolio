@@ -75,6 +75,75 @@ canAutoplay().then(autoplaySupported => {
 });
 
 // ===========================
+// VIDEO PLAY OVERLAY (robuste)
+// - crée un overlay si absent
+// - gère pointer-events pour permettre l'utilisation des contrôles
+// - clique sur l'overlay = toggle play/pause
+// ===========================
+const cardVideos = document.querySelectorAll('.card-video');
+
+cardVideos.forEach(video => {
+    const card = video.closest('.project-card');
+    if (!card) return;
+
+    const media = card.querySelector('.card-media');
+    let overlay = card.querySelector('.play-overlay');
+
+    // créer overlay si absent
+    if (!overlay && media) {
+        overlay = document.createElement('div');
+        overlay.className = 'play-overlay';
+        overlay.innerHTML = '<span>▶</span>';
+        media.appendChild(overlay);
+    }
+
+    if (!overlay) return;
+
+    // helpers
+    function showOverlay() {
+        card.classList.remove('video-playing');
+        overlay.style.opacity = '1';
+        overlay.style.pointerEvents = 'auto';
+    }
+
+    function hideOverlay() {
+        card.classList.add('video-playing');
+        overlay.style.opacity = '0';
+        overlay.style.pointerEvents = 'none';
+    }
+
+    // click overlay toggles playback
+    overlay.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (video.paused || video.ended) {
+            video.play().catch(err => console.log('Video play failed:', err));
+        } else {
+            video.pause();
+        }
+    });
+
+    // allow clicking the video itself to toggle when controls are absent
+    video.addEventListener('click', (e) => {
+        if (!video.hasAttribute('controls')) {
+            if (video.paused || video.ended) video.play().catch(() => {});
+            else video.pause();
+        }
+    });
+
+    // wire playback events
+    video.addEventListener('playing', hideOverlay);
+    video.addEventListener('play', hideOverlay);
+    video.addEventListener('pause', showOverlay);
+    video.addEventListener('ended', () => {
+        showOverlay();
+        video.currentTime = 0;
+    });
+
+    // initial state: show overlay when paused
+    if (video.paused || video.ended) showOverlay(); else hideOverlay();
+});
+
+// ===========================
 // SCROLL ANIMATIONS
 // ===========================
 const observerOptions = {
